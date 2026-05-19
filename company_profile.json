@@ -1,0 +1,48 @@
+{
+  "company": "Radial",
+  "company_slug": "radial",
+  "repo": "interventional-care-pathways",
+  "package": "interventional_care_pathways",
+  "cli": "interventional-care-pathways",
+  "title": "Interventional Care Pathways",
+  "problem": "interventional psychiatry clinics need care-pathway visibility that connects patient experience, treatment cadence, insurance friction, and outcomes without flattening clinical nuance.",
+  "direction": "A local pathway analytics workbench that simulates ketamine/TMS-style treatment journeys, flags drop-off risk, and explains operational bottlenecks by clinic, payer, and care step.",
+  "why": "Radial operates clinics and its CEO has publicly tied the mission to lived patient experience. The project targets the operational details that make treatment feel navigable for patients.",
+  "terms": [
+    "interventional",
+    "psychiatry",
+    "clinics",
+    "care-pathway",
+    "visibility",
+    "connects",
+    "patient",
+    "experience",
+    "treatment",
+    "cadence",
+    "insurance",
+    "friction",
+    "outcomes",
+    "flattening",
+    "clinical",
+    "nuance",
+    "pathway",
+    "analytics"
+  ],
+  "metrics": [
+    "interventional_coverage",
+    "psychiatry_risk",
+    "clinics_precision",
+    "care-pathway_latency"
+  ],
+  "failure_modes": [
+    "interventional_drift",
+    "psychiatry_gap",
+    "clinics_misroute",
+    "care-pathway_blindspot"
+  ],
+  "sources": [
+    "https://www.beckersbehavioralhealth.com/uncategorized/radials-ceo-on-leading-with-lived-experience/",
+    "https://theorg.com/org/radial-1/org-chart/john-capecelatro"
+  ],
+  "github_url": "https://github.com/t7r0n/interventional-care-pathways"
+}

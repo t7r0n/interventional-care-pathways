@@ -1,0 +1,18 @@
+{
+  "company": "Radial",
+  "repo": "interventional-care-pathways",
+  "metrics": [
+    "interventional_coverage",
+    "psychiatry_risk",
+    "clinics_precision",
+    "care-pathway_latency"
+  ],
+  "failure_modes": [
+    "interventional_drift",
+    "psychiatry_gap",
+    "clinics_misroute",
+    "care-pathway_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
