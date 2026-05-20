@@ -53,11 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://www.beckersbehavioralhealth.com/uncategorized/radials-ceo-on-leading-with-lived-experience/
-- https://theorg.com/org/radial-1/org-chart/john-capecelatro
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.

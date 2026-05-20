@@ -1,7 +1,7 @@
 [project]
 name = "interventional-care-pathways"
 version = "0.1.0"
-description = "A local pathway analytics workbench that simulates ketamine/TMS-style treatment journeys, flags drop-off risk, and explains operational bott"
+description = "A local pathway analytics workbench that simulates ketamine/TMS-style treatment journeys, flags drop-off risk, and expla"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

@@ -1,60 +1,57 @@
 {
   "repo": "interventional-care-pathways",
-  "company": "Radial",
+  "company": "Interventional Care Pathways",
   "rubric_axes": [
     {
-      "axis": "interventional_coverage",
+      "axis": "evidence_coverage",
       "failures": [
-        "interventional_drift"
+        "evidence_drift"
       ],
       "evidence_required": true
     },
     {
-      "axis": "psychiatry_risk",
+      "axis": "handoff_risk",
       "failures": [
-        "psychiatry_gap"
+        "handoff_gap"
       ],
       "evidence_required": true
     },
     {
-      "axis": "clinics_precision",
+      "axis": "claim_precision",
       "failures": [
-        "clinics_misroute"
+        "claim_misroute"
       ],
       "evidence_required": true
     },
     {
-      "axis": "care-pathway_latency",
+      "axis": "review_latency",
       "failures": [
-        "care-pathway_blindspot"
+        "review_blindspot"
       ],
       "evidence_required": true
     }
   ],
   "archetypes": [
     {
-      "name": "interventional evidence replay",
-      "trigger": "interventional signal changes while psychiatry context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "psychiatry boundary probe",
-      "trigger": "psychiatry handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "clinics regression harness",
-      "trigger": "clinics behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "care-pathway operator packet",
-      "trigger": "care-pathway output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources_used": [
-    "https://www.beckersbehavioralhealth.com/uncategorized/radials-ceo-on-leading-with-lived-experience/",
-    "https://theorg.com/org/radial-1/org-chart/john-capecelatro"
-  ]
+  "sources_used": []
 }

@@ -9,36 +9,36 @@ from typing import Any
 
 RULES = json.loads(r'''{
   "metrics": [
-    "interventional_coverage",
-    "psychiatry_risk",
-    "clinics_precision",
-    "care-pathway_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "interventional_drift",
-    "psychiatry_gap",
-    "clinics_misroute",
-    "care-pathway_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "interventional evidence replay",
-      "trigger": "interventional signal changes while psychiatry context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "psychiatry boundary probe",
-      "trigger": "psychiatry handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "clinics regression harness",
-      "trigger": "clinics behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "care-pathway operator packet",
-      "trigger": "care-pathway output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ]

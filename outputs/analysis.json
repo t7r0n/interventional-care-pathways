@@ -1,5 +1,5 @@
 {
-  "company": "Radial",
+  "company": "Interventional Care Pathways",
   "repo": "interventional-care-pathways",
   "cases": 144,
   "status_counts": {
@@ -9,53 +9,53 @@
   },
   "clusters": [
     {
-      "scenario": "care-pathway operator packet",
-      "cases": 36,
-      "blocks": 4,
-      "reviews": 5,
-      "mean_severity": 2.556,
-      "mean_score": 0.3766,
-      "top_evidence_id": "ev_0143",
-      "recommended_action": "accept only if decision claims cite fixture evidence"
-    },
-    {
-      "scenario": "clinics regression harness",
+      "scenario": "claim regression harness",
       "cases": 36,
       "blocks": 3,
       "reviews": 5,
       "mean_severity": 2.528,
-      "mean_score": 0.3855,
-      "top_evidence_id": "ev_0066",
+      "mean_score": 0.4118,
+      "top_evidence_id": "ev_0022",
       "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "interventional evidence replay",
+      "scenario": "evidence replay",
       "cases": 36,
       "blocks": 4,
       "reviews": 5,
       "mean_severity": 2.611,
-      "mean_score": 0.4105,
+      "mean_score": 0.4064,
       "top_evidence_id": "ev_0044",
       "recommended_action": "block release until cited evidence is regenerated"
     },
     {
-      "scenario": "psychiatry boundary probe",
+      "scenario": "handoff boundary probe",
       "cases": 36,
       "blocks": 3,
       "reviews": 4,
       "mean_severity": 2.528,
-      "mean_score": 0.3983,
-      "top_evidence_id": "ev_0121",
+      "mean_score": 0.3952,
+      "top_evidence_id": "ev_0033",
       "recommended_action": "route to reviewer with evidence packet"
+    },
+    {
+      "scenario": "review operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.4082,
+      "top_evidence_id": "ev_0099",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     }
   ],
   "highest_risk": {
-    "scenario": "interventional evidence replay",
+    "scenario": "evidence replay",
     "cases": 36,
     "blocks": 4,
     "reviews": 5,
     "mean_severity": 2.611,
-    "mean_score": 0.4105,
+    "mean_score": 0.4064,
     "top_evidence_id": "ev_0044",
     "recommended_action": "block release until cited evidence is regenerated"
   }
