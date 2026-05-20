@@ -2,19 +2,39 @@
 
 A local pathway analytics workbench that simulates ketamine/TMS-style treatment journeys, flags drop-off risk, and explains operational bottlenecks by clinic, payer, and care step.
 
-## Why This Exists
+![Interventional Care Pathways working dashboard](outputs/project_working.svg)
+
+## Why it exists
 
 interventional psychiatry clinics need care-pathway visibility that connects patient experience, treatment cadence, insurance friction, and outcomes without flattening clinical nuance.
 
-## What It Builds
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-- Replays synthetic `interventional` and `psychiatry` cases against the project's evidence rules.
-- Scores `interventional_coverage`, `psychiatry_risk`, and `clinics_precision` so regressions are visible in CSV and JSON.
-- Plants `interventional drift` and `psychiatry gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `interventional-care-pathways` without hosted services.
+## What is inside
 
-## Local Run
+- A deterministic replay harness tuned around interventional, psychiatry, and clinics.
+- Company-specific strategy code in `src/interventional_care_pathways/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Interventional Care Pathways evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `interventional coverage`
+- `psychiatry risk`
+- `clinics precision`
+- `care-pathway latency`
+
+## Failure modes it plants
+
+- interventional drift
+- psychiatry gap
+- clinics misroute
+- care-pathway blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -42,4 +60,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
