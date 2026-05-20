@@ -1,7 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-care-pathway policy boundary,24,2,3,1.708,0.2719,ev_0099,block release until replay is understood
-clinics failure replay,24,2,4,3.333,0.5254,ev_0110,block release until replay is understood
-interventional drift,24,2,3,2.5,0.404,ev_0088,block release until replay is understood
-interventional evidence recall,24,3,3,1.875,0.2869,ev_0132,block release until replay is understood
-psychiatry gap,24,3,2,3.333,0.5228,ev_0011,block release until replay is understood
-psychiatry reviewer handoff,24,2,4,2.583,0.3948,ev_0121,block release until replay is understood
+care-pathway operator packet,36,4,5,2.556,0.3766,ev_0143,accept only if decision claims cite fixture evidence
+clinics regression harness,36,3,5,2.528,0.3855,ev_0066,open a regression issue with trace and benchmark delta
+interventional evidence replay,36,4,5,2.611,0.4105,ev_0044,block release until cited evidence is regenerated
+psychiatry boundary probe,36,3,4,2.528,0.3983,ev_0121,route to reviewer with evidence packet

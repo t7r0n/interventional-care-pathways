@@ -9,74 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "care-pathway policy boundary",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 1.708,
-      "mean_score": 0.2719,
-      "top_evidence_id": "ev_0099",
-      "recommended_action": "block release until replay is understood"
+      "scenario": "care-pathway operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.3766,
+      "top_evidence_id": "ev_0143",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
     },
     {
-      "scenario": "clinics failure replay",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 3.333,
-      "mean_score": 0.5254,
-      "top_evidence_id": "ev_0110",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "interventional drift",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 2.5,
-      "mean_score": 0.404,
-      "top_evidence_id": "ev_0088",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "interventional evidence recall",
-      "cases": 24,
+      "scenario": "clinics regression harness",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 3,
-      "mean_severity": 1.875,
-      "mean_score": 0.2869,
-      "top_evidence_id": "ev_0132",
-      "recommended_action": "block release until replay is understood"
+      "reviews": 5,
+      "mean_severity": 2.528,
+      "mean_score": 0.3855,
+      "top_evidence_id": "ev_0066",
+      "recommended_action": "open a regression issue with trace and benchmark delta"
     },
     {
-      "scenario": "psychiatry gap",
-      "cases": 24,
+      "scenario": "interventional evidence replay",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.611,
+      "mean_score": 0.4105,
+      "top_evidence_id": "ev_0044",
+      "recommended_action": "block release until cited evidence is regenerated"
+    },
+    {
+      "scenario": "psychiatry boundary probe",
+      "cases": 36,
       "blocks": 3,
-      "reviews": 2,
-      "mean_severity": 3.333,
-      "mean_score": 0.5228,
-      "top_evidence_id": "ev_0011",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "psychiatry reviewer handoff",
-      "cases": 24,
-      "blocks": 2,
       "reviews": 4,
-      "mean_severity": 2.583,
-      "mean_score": 0.3948,
+      "mean_severity": 2.528,
+      "mean_score": 0.3983,
       "top_evidence_id": "ev_0121",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "route to reviewer with evidence packet"
     }
   ],
   "highest_risk": {
-    "scenario": "psychiatry gap",
-    "cases": 24,
-    "blocks": 3,
-    "reviews": 2,
-    "mean_severity": 3.333,
-    "mean_score": 0.5228,
-    "top_evidence_id": "ev_0011",
-    "recommended_action": "block release until replay is understood"
+    "scenario": "interventional evidence replay",
+    "cases": 36,
+    "blocks": 4,
+    "reviews": 5,
+    "mean_severity": 2.611,
+    "mean_score": 0.4105,
+    "top_evidence_id": "ev_0044",
+    "recommended_action": "block release until cited evidence is regenerated"
   }
 }
